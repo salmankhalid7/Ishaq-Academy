@@ -1,19 +1,23 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name    = htmlspecialchars($_POST["name"]);
-    $email   = htmlspecialchars($_POST["email"]);
-    $subject = htmlspecialchars($_POST["subject"]);
-    $message = htmlspecialchars($_POST["message"]);
+    $name    = htmlspecialchars(trim($_POST["name"]));
+    $email   = htmlspecialchars(trim($_POST["email"]));
+    $subject = htmlspecialchars(trim($_POST["subject"]));
+    $message = htmlspecialchars(trim($_POST["message"]));
 
-    $to      = "www.salmanjutt1122@gmail.com"; // Change to your real email
-    $headers = "From: $email" . "\r\n" .
-               "Reply-To: $email" . "\r\n" .
-               "Content-type:text/plain;charset=UTF-8";
+    $to      = "m.salmankhalid123@gmail.com"; // ✅ Your real email
+    $headers = "From: $email\r\n" .
+               "Reply-To: $email\r\n" .
+               "Content-Type: text/plain; charset=UTF-8";
 
-    $fullMessage = "Name: $name\nEmail: $email\n\nMessage:\n$message";
+    $fullMessage = "Name: $name\n";
+    $fullMessage .= "Email: $email\n\n";
+    $fullMessage .= "Message:\n$message";
 
+    // ✅ Send only once
     if (mail($to, $subject, $fullMessage, $headers)) {
-        echo "Message sent successfully!";
+        header('Location: thankyou.html');
+        exit;
     } else {
         echo "Error sending message.";
     }
@@ -21,10 +25,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     http_response_code(405); // Method Not Allowed
     echo "Method not allowed";
 }
-if (mail($to, $subject, $fullMessage, $headers)) {
-    header('Location: thankyou.html');
-    exit;
-}
 ?>
-
-
