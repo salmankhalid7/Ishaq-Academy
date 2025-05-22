@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <title>Document</title>
+</head>
+<body>
+  <!-- header section -->
+  <section class="Sub-gallery-header" style="background-color: rgb(159, 171, 194);">
+    <nav>
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo" />
+      </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="About_us.html">ABOUT US</a></li>
+          <li><a href="courses.html">COURSE</a></li>
+          <li><a href="Blog.html">BLOG</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1 style="color:aliceblue;">Our Campus Gallery</h1>
+  </section>
+
+<section class="gallery">
+  <h2>Sports</h>
+  <br>
+  <div class="gallery-grid">
+    <img src="images/sports.jpg" alt="Cafeteria" onclick="openModal(this)">
+    <img src="images/sports1.jpg" alt="Students" onclick="openModal(this)">
+    <img src="images/sports3.jpg" alt="Event" onclick="openModal(this)">
+    <img src="images/sports.jpg" alt="Sports" onclick="openModal(this)">
+    <img src="images/ground.jpg" alt="Ground" onclick="openModal(this)">
+    </div>
+    <br>
+  <h2>Events</h>
+  <div class="gallery-grid">
+    <img src="images/event.jpg" alt="Cafeteria" onclick="openModal(this)">
+    <img src="images/event1.jpg" alt="Students" onclick="openModal(this)">
+    <img src="images/event2.jpg" alt="Event" onclick="openModal(this)">
+    <img src="images/event3.jpg" alt="Sports" onclick="openModal(this)">
+    <img src="images/event4.jpg" alt="Ground" onclick="openModal(this)">
+    </div>
+    <br>
+  <h2>Annual dinner</h>
+
+  <div class="gallery-grid">
+    <img src="images/dinner1.jpg" alt="Cafeteria" onclick="openModal(this)">
+    <img src="images/students.jpg" alt="Students" onclick="openModal(this)">
+    <img src="images/dinner2.jpg" alt="Event" onclick="openModal(this)">
+    <img src="images/dinner3.jpg" alt="Sports" onclick="openModal(this)">
+    <img src="images/dinner4.jpg" alt="Ground" onclick="openModal(this)">
+    </div>
+
+</section>
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+  <span class="close" onclick="closeModal()">&times;</span>
+  <img class="modal-content" id="modalImage">
+  <div id="caption"></div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
