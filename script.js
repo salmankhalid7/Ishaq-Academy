@@ -66,3 +66,24 @@ window.onclick = function(event) {
         }
       });
     });
+
+// Show popup when the page loads
+window.addEventListener("load", function () {
+  document.getElementById("pageLoadPopup").style.display = "flex";
+});
+
+// Close popup function
+function closePagePopup() {
+  document.getElementById("pageLoadPopup").style.display = "none";
+}
+
+// Close popup if clicking outside the popup-content (the image and close button container)
+window.addEventListener("click", function(event) {
+  const popup = document.getElementById("pageLoadPopup");
+  const popupContent = document.querySelector(".popup-content");
+
+  if (popup.style.display === "flex" && !popupContent.contains(event.target)) {
+    popup.style.display = "none";
+  }
+});
+
