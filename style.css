@@ -1125,3 +1125,78 @@ body {
     font-size: 3rem;
   }
 }
+
+
+.page-popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  padding: 10px; /* Add some padding for mobile */
+}
+
+.popup-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; /* no bigger than viewport */
+}
+
+.popup-content img {
+  max-width: 100%;
+  height: auto;
+  max-height: 90vh; /* default max height for desktop */
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.3);
+  display: block;
+  margin: 0 auto;
+}
+
+/* Close button on top right corner of image */
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  background: rgba(0,0,0,0.4);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  user-select: none;
+  transition: background-color 0.3s;
+}
+
+.close-btn:hover {
+  background: rgba(255,255,255,0.7);
+  color: black;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+  .popup-content img {
+    max-height: 60vh; /* smaller height on mobile */
+    max-width: 90vw;
+  }
+
+  /* Slightly smaller close button on mobile */
+  .close-btn {
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+  }
+}
