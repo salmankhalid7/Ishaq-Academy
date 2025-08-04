@@ -1,25 +1,26 @@
-// Menu toggle functionality
+// Select elements
 let navLinks = document.querySelector(".nav-links");
 let openBtn = document.querySelector(".fa-bars");
 let closeBtn = document.querySelector(".fa-times");
 
-// Show menu
+// Show menu by adding 'active' class
 openBtn.addEventListener("click", () => {
-  navLinks.style.right = "0";
+  navLinks.classList.add("active");
 });
 
-// Hide menu
+// Hide menu by removing 'active' class
 closeBtn.addEventListener("click", () => {
-  navLinks.style.right = "-200px";
+  navLinks.classList.remove("active");
 });
 
-// Hide navLinks if clicking outside of it or the menu button
+// Hide menu if clicking outside nav menu or open button
 document.addEventListener("click", (event) => {
-  const isClickInsideNav = navLinks.contains(event.target);
-  const isClickOnOpenBtn = openBtn.contains(event.target);
+  const isInsideNav = navLinks.contains(event.target);
+  const isOpenBtn = openBtn.contains(event.target);
+  const isCloseBtn = closeBtn.contains(event.target);
 
-  if (!isClickInsideNav && !isClickOnOpenBtn) {
-    navLinks.style.right = "-200px";
+  if (!isInsideNav && !isOpenBtn && !isCloseBtn) {
+    navLinks.classList.remove("active");
   }
 });
 
@@ -66,3 +67,24 @@ window.onclick = function(event) {
         }
       });
     });
+
+// Show popup when the page loads
+window.addEventListener("load", function () {
+  document.getElementById("pageLoadPopup").style.display = "flex";
+});
+
+// Close popup function
+function closePagePopup() {
+  document.getElementById("pageLoadPopup").style.display = "none";
+}
+
+// Close popup if clicking outside the popup-content (the image and close button container)
+window.addEventListener("click", function(event) {
+  const popup = document.getElementById("pageLoadPopup");
+  const popupContent = document.querySelector(".popup-content");
+
+  if (popup.style.display === "flex" && !popupContent.contains(event.target)) {
+    popup.style.display = "none";
+  }
+});
+
