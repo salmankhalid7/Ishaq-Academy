@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="careersstyle.css" />
+  </head>
+  <body class="bg-gray-50 font-sans antialiased overflow-x-hidden">
+    <section class="Home-header">
+  <nav>
+    <a href="index.html">
+      <img src="images/logo.png" alt="logo" />
+    </a>
+
+    <!-- Navigation Links -->
+    <div class="nav-links" id="navLinks">
+      <i class="fas fa-times" onclick="hideMenu()"></i>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="About_us.html">ABOUT US</a></li>
+        <li><a href="courses.html">COURSE</a></li>
+        <li><a href="Blog.html">BLOG</a></li>
+        <li><a href="About_us.html#team">FACULTY</a></li>
+        <li><a href="contact_us.html">CONTACT US</a></li>
+        <li><a href="Careers.html">CAREERS</a></li>
+        <!-- Apply Now Button -->
+        <li>
+          <a href="#cv-submission" class="apply-btn">APPLY NOW</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Mobile Menu Icon -->
+    <i class="fas fa-bars" onclick="showMenu()"></i>
+  </nav>
+</section>
+<section id="hiring" class="hiring-section">
+  <div class="hiring-container">
+    <h2>🚀 We’re Hiring!</h2>
+    <p>
+      Join our dynamic team at <strong>Ishaq Academy</strong> and help us shape
+      the future of education. We’re looking for passionate and talented
+      individuals who want to make an impact.
+    </p>
+
+    <div class="hiring-cta">
+      <a href="#cv-submission" class="apply-now-btn">Apply Now</a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Job Openings Section -->
+    <section
+      id="jobs"
+      class="job-openings max-w-full sm:max-w-5xl mx-auto my-12 sm:my-16 px-4"
+    >
+      <h2
+        class="text-2xl sm:text-3xl font-bold text-gray-800 mb-6 sm:mb-8 text-center"
+      >
+        Current Job Openings
+      </h2>
+      <div class="space-y-4">
+        <div
+          class="job-card bg-white p-4 sm:p-6 rounded-lg shadow-md flex flex-col sm:flex-row justify-between items-start sm:items-center transition duration-300"
+        >
+          <h3
+            class="text-lg sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-0"
+          >
+            English Teacher
+          </h3>
+          <button
+            onclick="toggleJobDetails('english-teacher')"
+            class="view-btn bg-blue-600 text-white py-1.5 px-3 sm:py-2 sm:px-4 rounded-lg hover:bg-blue-700 transition duration-200"
+          >
+            View
+          </button>
+        </div>
+        <div
+          id="english-teacher"
+          class="job-details hidden bg-gray-100 p-4 sm:p-6 rounded-lg mt-2"
+        >
+          <h4 class="text-base sm:text-lg font-semibold text-gray-800 mb-2">
+            Title: English Teacher
+          </h4>
+          <p class="text-sm sm:text-gray-600 mb-3 sm:mb-4">
+            <strong>Description:</strong> Teach English language and literature
+            to students in classes 9–12, fostering communication and critical
+            thinking skills.
+          </p>
+          <p class="text-sm sm:text-gray-600 mb-3 sm:mb-4">
+            <strong>Requirements:</strong> Bachelor’s degree in English or
+            Education, 2+ years of teaching experience, and proficiency in
+            Punjab Board curriculum.
+          </p>
+          <p class="text-sm sm:text-gray-600 mb-3 sm:mb-4">
+            <strong>What You Will Get:</strong> Competitive salary, supportive
+            work environment, professional development opportunities, and paid
+            leave.
+          </p>
+          <a
+            href="#cv-submission"
+            class="inline-block bg-green-500 text-white py-1.5 px-3 sm:py-2 sm:px-4 rounded-lg hover:bg-green-600 transition duration-200 text-sm sm:text-base"
+            >Apply Now</a
+          >
+        </div>
+
+        <div
+          class="job-card bg-white p-4 sm:p-6 rounded-lg shadow-md flex flex-col sm:flex-row justify-between items-start sm:items-center transition duration-300"
+        >
+          <h3
+            class="text-lg sm:text-xl font-semibold text-gray-800 mb-2 sm:mb-0"
+          >
+            Arts Teacher
+          </h3>
+          <button
+            onclick="toggleJobDetails('arts-teacher')"
+            class="view-btn bg-blue-600 text-white py-1.5 px-3 sm:py-2 sm:px-4 rounded-lg hover:bg-blue-700 transition duration-200"
+          >
+            View
+          </button>
+        </div>
+        <div
+          id="arts-teacher"
+          class="job-details hidden bg-gray-100 p-4 sm:p-6 rounded-lg mt-2"
+        >
+          <h4 class="text-base sm:text-lg font-semibold text-gray-800 mb-2">
+            Title: Arts Teacher
+          </h4>
+          <p class="text-sm sm:text-gray-600 mb-3 sm:mb-4">
+            <strong>Description:</strong> Instruct students in visual arts,
+            encouraging creativity and artistic expression through various
+            mediums.
+          </p>
+          <p class="text-sm sm:text-gray-600 mb-3 sm:mb-4">
+            <strong>Requirements:</strong> Bachelor’s degree in Fine Arts or
+            related field, 2+ years of teaching experience, and strong portfolio
+            of artistic work.
+          </p>
+          <p class="text-sm sm:text-gray-600 mb-3 sm:mb-4">
+            <strong>What You Will Get:</strong> Creative freedom, access to art
+            supplies, collaborative team environment, and opportunities for
+            growth.
+          </p>
+          <a
+            href="#cv-submission"
+            class="inline-block bg-green-500 text-white py-1.5 px-3 sm:py-2 sm:px-4 rounded-lg hover:bg-green-600 transition duration-200 text-sm sm:text-base"
+            >Apply Now</a
+          >
+        </div>
+      </div>
+      <p class="mt-6 sm:mt-8 text-center text-sm sm:text-gray-600">
+        Be a part of our dynamic team, apply now!
+      </p>
+    </section>
+
+    <!-- CV Submission Section -->
+    <section
+      id="cv-submission"
+      class="cv-submission max-w-full sm:max-w-2xl mx-auto my-12 sm:my-20 px-4"
+    >
+      <div
+        class="bg-white p-6 sm:p-10 rounded-2xl shadow-2xl border border-gray-100"
+      >
+        <h2
+          class="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-4 sm:mb-6 text-center"
+        >
+          📄 Submit Your CV
+        </h2>
+        <p class="text-sm sm:text-gray-600 text-center mb-6 sm:mb-8">
+          Apply for your desired position by filling in the form below.
+        </p>
+
+        <form id="cvForm" class="space-y-6" onsubmit="handleSubmit(event)">
+          <div>
+            <label
+              for="name"
+              class="block text-xs sm:text-sm font-semibold text-gray-700 mb-2"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-sm sm:text-base"
+            />
+          </div>
+
+          <div>
+            <label
+              for="phone"
+              class="block text-xs sm:text-sm font-semibold text-gray-700 mb-2"
+              >Phone Number</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-sm sm:text-base"
+            />
+          </div>
+
+          <div>
+            <label
+              for="email"
+              class="block text-xs sm:text-sm font-semibold text-gray-700 mb-2"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-sm sm:text-base"
+            />
+          </div>
+
+          <div>
+            <label
+              for="position"
+              class="block text-xs sm:text-sm font-semibold text-gray-700 mb-2"
+              >Subject of Interest</label
+            >
+            <select
+              id="position"
+              name="position"
+              required
+              class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-sm sm:text-base"
+            >
+              <option value="Physics">Physics</option>
+              <option value="Chemistry">Chemistry</option>
+              <option value="Biology">Biology</option>
+              <option value="Mathematics">Mathematics</option>
+              <option value="English">English</option>
+              <option value="Urdu">Urdu</option>
+              <option value="Pakistan Studies">Pakistan Studies</option>
+              <option value="Islamiyat">Islamiyat</option>
+              <option value="Computer Science">Computer Science</option>
+              <option value="Fine Arts">Fine Arts</option>
+              <option value="Home Economics">Home Economics</option>
+              <option value="Civics">Civics</option>
+              <option value="Education">Education</option>
+            </select>
+          </div>
+
+          <div>
+            <label
+              for="message"
+              class="block text-xs sm:text-sm font-semibold text-gray-700 mb-2"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full px-3 py-2 sm:px-4 sm:py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-sm sm:text-base"
+            ></textarea>
+          </div>
+
+          <div>
+            <label
+              for="cv"
+              class="block text-xs sm:text-sm font-semibold text-gray-700 mb-2"
+              >Upload CV (PDF, DOC, DOCX)</label
+            >
+            <input
+              type="file"
+              id="cv"
+              name="cv"
+              accept=".pdf,.doc,.docx"
+              required
+              class="w-full text-gray-600 border border-gray-300 rounded-lg shadow-sm file:mr-3 file:py-1.5 file:px-3 sm:file:mr-4 sm:file:py-2 sm:file:px-4 file:rounded-lg file:border-0 file:bg-blue-100 file:text-blue-700 hover:file:bg-blue-200 text-sm sm:text-base"
+            />
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              class="w-full bg-green-500 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg font-semibold hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition transform hover:scale-105 flex items-center justify-center text-sm sm:text-base"
+            >
+              📤 Send via WhatsApp
+            </button>
+          </div>
+        </form>
+        <p
+          id="formMessage"
+          class="mt-6 text-center text-xs sm:text-sm text-gray-600"
+        ></p>
+      </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a
+      href="https://wa.me/923351501056?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20courses"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener"
+    >
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/124/124034.png"
+        alt="WhatsApp"
+      />
+      <span class="whatsapp-text">Chat with us</span>
+    </a>
+
+    <!-- Footer -->
+    <footer class="isha-footer">
+      <div class="footer-container">
+        <!-- About Section -->
+        <div class="footer-column">
+          <h3>Ishaq Academy</h3>
+          <p>
+            Empowering students with quality education and practical skills for
+            a brighter future.
+          </p>
+          <img
+            src="images/logo.png"
+            alt="Ishaq Academy Logo"
+            class="footer-logo"
+          />
+          <span id="footer-brand">Ishaq Academy</span>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="About_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact</a></li>
+            <li><a href="Careers.html">Careers</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="footer-column">
+          <h4>Contact Us</h4>
+          <p><i class="fas fa-envelope"></i> ishaqacademy@gmail.com</p>
+          <p><i class="fas fa-phone-alt"></i> +92 335 1501056</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Main Diyal House, Canal Road,
+            Lahore, Pakistan
+          </p>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-column">
+          <h4>Follow Us</h4>
+          <div class="social-icons">
+            <a
+              href="https://wa.me/923351501056?text=Hi%2C%20I%20want%20to%20know%20about%20your%20courses"
+              target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+            <a href="https://www.facebook.com/IshaqAcademy/" target="_blank"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/ishaqacademy_14/?hl=en"
+              target="_blank"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://www.youtube.com/c/ISHAQACADEMY" target="_blank"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@ishaq.academy?_t=ZS-8wd9QwUTMWt&_r=1"
+              target="_blank"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+            <br />
+            <span>Social Media</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ishaq Academy. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

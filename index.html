@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ishaq Academy</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+  <!-- header section -->
+  <section class="Home-header">
+    <nav>
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo" />
+      </a>
+      <div class="nav-links" id="navLinks">
+        <i class="fas fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="About_us.html">ABOUT US</a></li>
+          <li><a href="courses.html">COURSE</a></li>
+          <li><a href="Blog.html">BLOG</a></li>
+          <li><a href="About_us.html#team">FACULTY</a></li>
+          <li><a href="contact_us.html">CONTACT US</a></li>
+          <li><a href="Careers.html">CAREERS</a></li>
+        </ul>
+      </div>
+      <i class="fas fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>ISHAQ ACADEMY</h1>
+      <p>CONCEIVE, BELIEVE , ACHIEVE .</p>
+      <a href="contact_us.html" class="hero-btn">Visit us to know more</a>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <h1>Our Campus Gallery</h1>
+    <div class="gallery-grid">
+      <img src="images/students.jpg" alt="Students" onclick="openModal(this)" />
+      <img src="images/event.jpg" alt="Event" onclick="openModal(this)" />
+      <img src="images/sports.jpg" alt="Sports" onclick="openModal(this)" />
+      <img src="images/Kids.jpg" alt="kids" onclick="openModal(this)" />
+    </div>
+    <a href="gallery.html" class="gallery-btn">Click to view more</a>
+  </section>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage" />
+    <div id="caption"></div>
+  </div>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+  </div>
+
+  <!-- Testimonial section -->
+  <section class="testimonials">
+    <h1>Students Feedback</h1>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <div class="student-image">
+          <img src="images/SALMAN KHALID.jpg" alt="SALMAN KHALID" />
+        </div>
+        <p>
+          "Ishaq Academy has been a life-changing experience for me. The
+          teachers are very supportive, and the courses are top-notch!"
+        </p>
+        <h3>SALMAN KHALID</h3>
+        <p class="location">Student - WEB DEVELOPMENT</p>
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-alt"></i>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="student-image">
+          <img src="images/jawad.jpg" alt="JAWAD ALI" />
+        </div>
+        <p>
+          "A wonderful experience! The academy's approach to education is very
+          practical and focuses on real-world knowledge."
+        </p>
+        <h3>JAWAD ALI</h3>
+        <p class="location">Student - ECAT</p>
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-alt"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div class="student-image">
+          <img src="images/junaid.jpg" alt="JUNAID SAJID" />
+        </div>
+        <p>
+          "I highly recommend Ishaq Academy! The lessons are engaging, and the
+          staff goes above and beyond to ensure we succeed."
+        </p>
+        <h3>JUNAID SAJID</h3>
+        <p class="location">Student - INTERMEDIATE</p>
+        <div class="stars">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Chose us -->
+  <section class="why-choose-us">
+    <h1>Why Choose Us?</h1>
+    <div class="row">
+      <div class="feature">
+        <i class="fas fa-chalkboard-teacher"></i>
+        <h3>Experienced Teachers</h3>
+        <p>
+          Our qualified faculty ensures strong foundations and board exam
+          success.
+        </p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-trophy"></i>
+        <h3>Top Results</h3>
+        <p>
+          We consistently produce board toppers and high achievers in Punjab.
+        </p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Modern Classrooms</h3>
+        <p>
+          Smart classrooms and updated teaching methods for better learning.
+        </p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-book-reader"></i>
+        <h3>Test Session & Preparation</h3>
+        <p>
+          Frequent test sessions, entry test prep (MDCAT/ECAT), and
+          performance tracking.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact us -->
+  <section class="contact">
+    <h1>Contact Us</h1>
+    <p>
+      We'd love to hear from you! Reach out for inquiries, admissions, or
+      visits.
+    </p>
+    <div class="contact-details">
+      <div class="contact-box">
+        <i class="fas fa-phone-alt"></i>
+        <h3>Phone</h3>
+        <p>+92 335 1501056</p>
+      </div>
+      <div class="contact-box">
+        <i class="fas fa-envelope"></i>
+        <h3>Email</h3>
+        <p>ishaqacademy@gmail.com</p>
+      </div>
+      <div class="contact-box">
+        <i class="fas fa-map-marker-alt"></i>
+        <h3>Location</h3>
+        <p>Main Diyal House,Canal Road,Lahore, Pakistan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="isha-footer">
+    <div class="footer-container">
+      <!-- About Section -->
+      <div class="footer-column">
+        <h3>Ishaq Academy</h3>
+        <p>
+          Empowering students with quality education and practical skills for
+          a brighter future.
+        </p>
+        <img src="images/logo.png" alt="Ishaq Academy Logo" class="footer-logo" />
+        <span id="footer-brand">Ishaq Academy</span>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="About_us.html">About Us</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-column">
+        <h4>Contact Us</h4>
+        <p><i class="fas fa-envelope"></i> ishaqacademy@gmail.com</p>
+        <p><i class="fas fa-phone-alt"></i> +92 335 1501056</p>
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Main Diyal House,Canal
+          Road,Lahore, Pakistan
+        </p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://wa.me/923351501056?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20courses" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://www.facebook.com/IshaqAcademy/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/ishaqacademy_14/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.youtube.com/c/ISHAQACADEMY" target="_blank"><i class="fab fa-youtube"></i></a>
+          <a href="https://www.tiktok.com/@ishaq.academy?_t=ZS-8wd9QwUTMWt&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <br />
+          <span>Social Media</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ishaq Academy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Popup Image Modal on Page Load -->
+  <div id="pageLoadPopup" class="page-popup">
+    <div class="popup-content">
+      <span class="close-btn" onclick="closePagePopup()">&times;</span>
+      <img src="images/result.jpg" alt="Popup" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/923351501056?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20courses"
+    class="whatsapp-float" target="_blank" rel="noopener">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" />
+    <span class="whatsapp-text">Chat with us</span>
+  </a>
+</body>
+</html>

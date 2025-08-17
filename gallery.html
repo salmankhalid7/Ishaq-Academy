@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- header section -->
+    <section
+      class="Sub-gallery-header"
+      style="background-color: rgb(34, 61, 151)"
+    >
+      <nav>
+        <a href="index.html">
+          <img src="images/logo.png" alt="logo" id="gallery-logo" />
+        </a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" id="closeMenu" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="About_us.html">ABOUT US</a></li>
+            <li><a href="courses.html">COURSE</a></li>
+            <li><a href="Blog.html">BLOG</a></li>
+            <li><a href="About_us.html#team">FACULTY</a></li>
+            <li><a href="contact_us.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" id="openMenu" onclick="showMenu()"></i>
+        <!-- WhatsApp Floating Button -->
+        <a
+          href="https://wa.me/923351501056?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20courses"
+          class="whatsapp-float"
+          target="_blank"
+          rel="noopener"
+        >
+          <i class="fab fa-whatsapp"></i>    Chat with us
+        </a>
+      </nav>
+
+      <h1 style="color: aliceblue">
+        Our Campus <span id="gallery-sp">Gallery</span>
+      </h1>
+    </section>
+    <section class="gallery">
+      <h2>Sports</h2>
+      <br />
+
+      <div class="gallery-grid">
+        <img
+          src="images/sports.jpg"
+          alt="Cafeteria"
+          onclick="openModal(this)"
+        />
+        <img
+          src="images/sports1.jpg"
+          alt="Students"
+          onclick="openModal(this)"
+        />
+        <img src="images/sports3.jpg" alt="Event" onclick="openModal(this)" />
+        <img src="images/ground.jpg" alt="Sports" onclick="openModal(this)" />
+      </div>
+      <br />
+      <h2>Events</h2>
+      <br />
+      <div class="gallery-grid">
+        <img src="images/event.jpg" alt="Cafeteria" onclick="openModal(this)" />
+        <img src="images/event1.jpg" alt="Students" onclick="openModal(this)" />
+        <img src="images/event2.jpg" alt="Event" onclick="openModal(this)" />
+        <img src="images/event3.jpg" alt="Sports" onclick="openModal(this)" />
+      </div>
+      <br />
+
+      <h2>Annual Dinner</h2>
+      <br />
+
+      <div class="gallery-grid">
+        <img
+          src="images/dinner1.jpg"
+          alt="Cafeteria"
+          onclick="openModal(this)"
+        />
+        <img
+          src="images/students.jpg"
+          alt="Students"
+          onclick="openModal(this)"
+        />
+        <img src="images/dinner2.jpg" alt="Event" onclick="openModal(this)" />
+        <img src="images/dinner3.jpg" alt="Sports" onclick="openModal(this)" />
+      </div>
+      <br>
+      <h2>Academy Events</h2>
+      <br />
+
+      <div class="gallery-grid">
+        <img
+          src="images/Kids.jpg"
+          alt="Cafeteria"
+          onclick="openModal(this)"
+        />
+        <img
+          src="images/ground.jpg"
+          alt="Students"
+          onclick="openModal(this)"
+        />
+        <img src="images/family.jpg" alt="Event" onclick="openModal(this)" />
+        <img src="images/lantern.jpg" alt="Sports" onclick="openModal(this)" />
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
